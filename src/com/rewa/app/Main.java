@@ -12,29 +12,29 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        // Section titles
-        Label todoLabel = new Label("✅ To-Do");
+        // To-do section
+        TodoSection todoSection = new TodoSection();
+        VBox todoBox = todoSection.getSection();
+
+
+        // Follow-up section
         Label followUpLabel = new Label("🔁 Follow-Up Tasks");
-        Label weekDueLabel = new Label("📅 Week-Due Tasks");
-
-        // Styling
-        todoLabel.setFont(Font.font("Arial", 18));
         followUpLabel.setFont(Font.font("Arial", 18));
-        weekDueLabel.setFont(Font.font("Arial", 18));
-
-        // Task lists (empty for now)
-        ListView<String> todoList = new ListView<>();
         ListView<String> followUpList = new ListView<>();
+
+        // Week-due section
+        Label weekDueLabel = new Label("📅 Week-Due Tasks");
+        weekDueLabel.setFont(Font.font("Arial", 18));
         ListView<String> weekDueList = new ListView<>();
 
         // Layout
         VBox layout = new VBox(15); // spacing
         layout.setStyle("-fx-padding: 20;");
         layout.getChildren().addAll(
-            todoLabel, todoList,
-            followUpLabel, followUpList,
+            todoBox, followUpLabel, followUpList,
             weekDueLabel, weekDueList
         );
+
 
         // Scene
         Scene scene = new Scene(layout, 600, 600);
