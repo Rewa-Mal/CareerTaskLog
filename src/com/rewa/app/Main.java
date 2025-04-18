@@ -7,7 +7,6 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import com.rewa.app.TodoSection;
 
 public class Main extends Application {
 
