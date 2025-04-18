@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run JavaFX App",
+      "request": "launch",
+      "mainClass": "com.rewa.app.Main",
+      "vmArgs": "--module-path /Users/rewamal/KeepForLater/javafx-sdk-17.0.15/lib --add-modules javafx.controls"
+    }
+  ]
+}
