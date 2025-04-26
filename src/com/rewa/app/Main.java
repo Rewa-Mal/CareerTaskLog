@@ -41,8 +41,8 @@ public class Main extends Application {
         TodoSection todoSection = new TodoSection();
         VBox todoBox = todoSection.getSection();
 
-        // Follow-up section
-        Label followUpLabel = new Label("🔁 Follow-Up Tasks");
+        // Archive section
+        Label followUpLabel = new Label("🔁 Archive Tasks");
         followUpLabel.setFont(Font.font("Arial", 18));
         ListView<String> followUpList = new ListView<>();
 
