@@ -41,10 +41,10 @@ public class Main extends Application {
         TodoSection todoSection = new TodoSection();
         VBox todoBox = todoSection.getSection();
 
-        // Follow-up section
-        Label followUpLabel = new Label("🔁 Follow-Up Tasks");
-        followUpLabel.setFont(Font.font("Arial", 18));
-        ListView<String> followUpList = new ListView<>();
+        // Archive section 
+        Label archiveLabel = new Label("🔁 Archive Tasks");
+        archiveLabel.setFont(Font.font("Arial", 18));
+        ListView<String> archiveList = new ListView<>();
 
 
         // Layout
@@ -55,7 +55,7 @@ public class Main extends Application {
         VBox layout = new VBox(15);
         layout.setStyle("-fx-padding: 20;");
         layout.getChildren().addAll(
-            dataHBox, topRow, followUpLabel, followUpList
+            dataHBox, topRow, archiveLabel, archiveList
         );
 
         // Scene
