@@ -11,6 +11,11 @@ import javafx.scene.control.*;
 public class TodoSection {
 
     private ListView<Task> todoList = new ListView<>();
+    // private WeekDueSection weekDueSection;
+
+    public TodoSection() {
+        // this.weekDueSection = weekDueSection;
+    }
 
     public VBox getSection() {
         // Section title
@@ -24,7 +29,7 @@ public class TodoSection {
         DatePicker dueDatePicker = new DatePicker();
         dueDatePicker.setPromptText("Due date");
 
-        Button addButton = new Button("Add");
+        Button addButton = new Button("+");
         addButton.setOnAction(e -> {
             String description = descriptionField.getText();
             LocalDate dueDate = dueDatePicker.getValue();  // May be null
