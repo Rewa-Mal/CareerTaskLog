@@ -31,7 +31,7 @@ public class Task {
         if (dueDate == null) {
             return description + " (No due date)";
         } else {
-            return description + " (Due: " + dueDate + ", " + getDayOfWeek() + ")";
+            return description + "\t\t(Due: " + dueDate + ")";
         }
     }
     

@@ -34,7 +34,7 @@ public class Main extends Application {
 
         
         // Weekly To-do section
-        WeekDueSection weekDueSection = new WeekDueSection();
+        WeeklyToDoSection weekDueSection = new WeeklyToDoSection();
         VBox weekDueBox = weekDueSection.getSection();
 
         // // To-do section
