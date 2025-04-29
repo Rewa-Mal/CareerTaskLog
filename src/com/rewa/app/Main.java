@@ -33,13 +33,13 @@ public class Main extends Application {
         weekLabel.setFont(Font.font("Arial", 16));
 
         
-        // Week-due section
+        // Weekly To-do section
         WeekDueSection weekDueSection = new WeekDueSection();
         VBox weekDueBox = weekDueSection.getSection();
 
-        // To-do section
-        TodoSection todoSection = new TodoSection();
-        VBox todoBox = todoSection.getSection();
+        // // To-do section
+        // TodoSection todoSection = new TodoSection();
+        // VBox todoBox = todoSection.getSection();
 
         // Archive section 
         Label archiveLabel = new Label("🔁 Archive Tasks");
@@ -49,7 +49,7 @@ public class Main extends Application {
 
         // Layout
         HBox dataHBox = new HBox(20, dateLabel, weekLabel);
-        HBox topRow = new HBox(20, todoBox, weekDueBox);
+        HBox topRow = new HBox(20, weekDueBox);
         topRow.setStyle("-fx-alignment: top-left;");
 
         VBox layout = new VBox(15);
@@ -60,7 +60,7 @@ public class Main extends Application {
 
         // Scene
         Scene scene = new Scene(layout, 860, 600);
-        primaryStage.setTitle("Career Task Log");
+        primaryStage.setTitle("Career Tasks Log");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
